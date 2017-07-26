@@ -1,0 +1,16 @@
+.idea/
+build/
+**/.idea/
+**/build/
+**/out
+out
+**/target/
+target
+gradle/
+**/gradle/
+gradlew
+**/gradlew
+gradlew.bat
+**/gradlew.bat
+*.iml
+**/*.iml
