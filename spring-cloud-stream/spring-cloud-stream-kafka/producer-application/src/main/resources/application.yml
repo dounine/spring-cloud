@@ -1,0 +1,20 @@
+server:
+  port: 7777
+spring:
+  cloud:
+    stream:
+      bindings:
+        consumer.destination: consumer
+        consumer.group: consumer-group
+      binders:
+        kafka:
+          type: kafka
+          environment:
+            spring:
+              kafka:
+                binder:
+                  brokers: localhost:9092
+                  zk-nodes: localhost:2182
+                  auto-add-partitions: true
+                  auto-create-topics: true
+                  min-partition-count: 1

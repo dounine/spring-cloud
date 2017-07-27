@@ -1,0 +1,12 @@
+version: '2'  #"登录容器请执行:rabbitmq-plugins enable rabbitmq_management 才可使用WEB管理页面"
+services:
+  rabbitmq:
+    image: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    hostname: rabbit
+    environment:
+      RABBITMQ_DEFAULT_VHOST: /
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: admin
