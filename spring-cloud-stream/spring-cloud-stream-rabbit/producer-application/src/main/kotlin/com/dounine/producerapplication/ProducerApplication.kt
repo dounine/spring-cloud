@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController
 @EnableBinding(ProducerChannels::class)
 class ProducerApplication(channels: ProducerChannels){
     init {
-        TestAct.CONSUMER = channels.channel()
+        TestAct.CONSUMER = channels.consumer()
     }
 }
 

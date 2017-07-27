@@ -15,7 +15,6 @@ buildscript {
 
 apply plugin: 'kotlin'
 apply plugin: 'kotlin-spring'
-apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 
 version = '0.0.1-SNAPSHOT'
@@ -39,6 +38,7 @@ ext {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-actuator')
 	compile('org.springframework.cloud:spring-cloud-starter-stream-rabbit')
+    compile('org.springframework.boot:spring-boot-starter-integration')
 	compile("org.jetbrains.kotlin:kotlin-stdlib-jre8:${kotlinVersion}")
 	compile("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
 	testCompile('org.springframework.boot:spring-boot-starter-test')

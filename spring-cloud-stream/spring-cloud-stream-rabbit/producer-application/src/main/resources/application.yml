@@ -5,6 +5,7 @@ spring:
     stream:
       bindings:
         consumer.destination: consumer
+        consumer.group: consumer-group
       binders:
         rabbit1:
           type: rabbit

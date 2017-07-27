@@ -1,10 +1,11 @@
 server:
-  port: 7777
+  port: 7778
 spring:
   cloud:
     stream:
       bindings:
-        consumer.destination: consumer
+        producer.destination: consumer
+        producer.group: consumer-group
       binders:
         rabbit1:
           type: rabbit

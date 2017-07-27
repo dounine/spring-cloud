@@ -6,5 +6,5 @@ import org.springframework.messaging.MessageChannel
 interface ProducerChannels {
 
     @Output
-    fun channel(): MessageChannel
+    fun consumer(): MessageChannel
 }

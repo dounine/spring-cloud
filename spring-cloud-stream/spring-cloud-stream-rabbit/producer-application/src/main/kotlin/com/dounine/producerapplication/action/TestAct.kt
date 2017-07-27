@@ -16,11 +16,12 @@ class TestAct {
         lateinit var CONSUMER:MessageChannel
     }
 
-    @GetMapping("hello/{name}")
-    fun hello(@PathVariable name: String): String {
-        var msg:Message<String> = MessageBuilder.withPayload(name).build();
-        CONSUMER.send(msg)
-        return name
+    @GetMapping("send/{msg}")
+    fun send(@PathVariable msg: String): String {
+        var mm:Message<String> = MessageBuilder.withPayload(msg).build();
+        CONSUMER.send(mm)
+        println(msg+" 消息发送成功")
+        return "success"
     }
 
 }
