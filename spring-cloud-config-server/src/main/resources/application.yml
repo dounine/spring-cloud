@@ -1,0 +1,18 @@
+server:
+  port: 7779
+
+logging:
+  level:
+    org.springframework.cloud: 'INFO'
+
+spring:
+  profiles:
+    active: native
+  application:
+    name: spring-cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/dounine/spring-cloud.git
+          search-paths: spring-cloud-config-repo

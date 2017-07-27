@@ -1,0 +1,5 @@
+server:
+  port: 7782
+spring:
+  application:
+    name: module-2
