@@ -3,3 +3,11 @@ server:
 spring:
   application:
     name: module-2
+  rabbitmq:
+      host: localhost
+      port: 5672
+      username: admin
+      password: admin
+management:
+  security:
+    enabled: false

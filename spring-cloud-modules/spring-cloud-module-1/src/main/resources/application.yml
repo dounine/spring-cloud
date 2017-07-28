@@ -1,5 +1,23 @@
 server:
   port: 7783
 spring:
+  rabbitmq:
+      host: localhost
+      port: 5672
+      username: admin
+      password: admin
   application:
     name: module-1
+  cloud:
+    bus:
+      trace:
+        enabled: true
+management:
+  security:
+    enabled: false
+
+
+
+
+
+

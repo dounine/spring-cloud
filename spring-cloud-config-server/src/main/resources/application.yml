@@ -9,6 +9,11 @@ logging:
 spring:
 #  profiles:
 #    active: native
+#  rabbitmq:  #消息bus总线
+#      host: localhost
+#      port: 5672
+#      username: admin
+#      password: admin
   application:
     name: spring-cloud-config-server
   cloud:
