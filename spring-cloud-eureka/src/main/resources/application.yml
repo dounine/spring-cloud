@@ -1,2 +1,5 @@
 server:
   port: 7781
+spring:
+  application:
+    name: eureka

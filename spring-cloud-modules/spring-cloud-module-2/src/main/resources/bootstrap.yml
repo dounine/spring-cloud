@@ -5,7 +5,14 @@ spring:
       profile: dev
 eureka:
   instance:
+    ip-address: 192.168.0.72
     prefer-ip-address: true
   client:
     service-url:
       defaultZone: http://localhost:7781/eureka/
+management:
+  security:
+    enabled: false
+endpoints:
+  restart:
+    enabled: true
